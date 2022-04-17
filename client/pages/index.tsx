@@ -1,4 +1,5 @@
 import type { NextPage } from "next"
+import Link from "next/link"
 
 const Home: NextPage = () => {
   return (
@@ -8,9 +9,11 @@ const Home: NextPage = () => {
         <p className="m-5 font-sans text-lg text-gray">
           Bridging communities through music.
         </p>
-        <button className="hover: m-5 rounded-xl bg-light-purple py-4 px-8 font-sans text-sky-blue hover:border-[1px] hover:border-light-purple hover:bg-transparent hover:text-light-purple">
-          Start Your Journey!
-        </button>
+        <Link href="/login">
+          <button className="m-5 rounded-xl bg-light-purple py-4 px-8 font-sans text-sky-blue hover:border-[1px] hover:border-light-purple hover:bg-transparent hover:text-light-purple">
+            Start Your Journey!
+          </button>
+        </Link>
       </div>
     </div>
   )
