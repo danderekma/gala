@@ -4,9 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      "made.dillan": ["made.dillan", "sans-serif"],
-    },
+    fontFamily: {},
     extend: {},
   },
   plugins: [],
