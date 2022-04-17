@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Made Dillan";
+    src: url("../public/fonts/Made\ Dillan.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Poppins Medium";
+    src: url("../public/fonts/Poppins\ Medium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins Regular";
+    src: url("../public/fonts/Poppins\ Regular.ttf") format("truetype");
+  }
+}
