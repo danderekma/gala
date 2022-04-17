@@ -21,7 +21,7 @@ module.exports = (passport) => {
         try {
           let user = await User.findOne({ googleID: profile.id });
           if (user) {
-            done(null, user)
+            done(null, user);
           }
         }
       }
