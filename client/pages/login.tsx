@@ -5,7 +5,7 @@ const Login: NextPage = () => {
     <div className="bg-gradient-to-r from-purple-500 to-pink-500">
       <h1 className="flex h-screen flex-col items-center justify-center">
         <h2 className="py-8 text-5xl text-purple-500">Login</h2>
-        <h2 className="font-poppins">google auth</h2>
+        <h2>google auth</h2>
       </h1>
     </div>
   )
