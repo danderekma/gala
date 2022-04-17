@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const passport = require("passport");
 const session = require("express-session");
@@ -8,6 +9,13 @@ dotenv.config();
 require("./passport")(passport);
 
 const app = express();
+
+const uri = process.env.MONGO_URI;
+mongoose.connect(uri);
+const connection = mongoose.connection;
+connection.once("open", () => {
+  console.log("MongoDB databased connection established successfully");
+});
 
 app.use(
   session({
