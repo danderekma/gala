@@ -1,9 +1,9 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next"
 
 const Login: NextPage = () => {
   return (
     <div>
-      <h1 className="text-xl text-purple-500">Login</h1>
+      <h1 className="text-2xl text-purple-500">Login</h1>
     </div>
   )
 }
